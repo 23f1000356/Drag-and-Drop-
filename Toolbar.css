@@ -1,0 +1,40 @@
+.toolbar {
+    width: 250px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+  }
+  
+  .toolbar h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .elements-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .toolbar-element {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: move;
+    transition: transform 0.2s;
+  }
+  
+  .toolbar-element:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toolbar-element p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+  } 
